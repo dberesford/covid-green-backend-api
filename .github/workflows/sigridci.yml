@@ -11,7 +11,7 @@ jobs:
         env:
           SIGRID_CI_ACCOUNT: "${{ secrets.SIGRID_CI_ACCOUNT }}"
           SIGRID_CI_TOKEN: "${{ secrets.SIGRID_CI_TOKEN }}"
-        run: "./sigridci/sigridci/sigridci.py --customer bluebridgetech --system covid-green-backend-api --source . --targetquality 3.5" 
+        run: "./sigridci/sigridci/sigridci.py --customer bluebridgetech --system covid-green-backend-api --source . --targetquality 3.3" 
       - name: "Save Sigrid CI results"
         uses: actions/upload-artifact@v2
         with:
